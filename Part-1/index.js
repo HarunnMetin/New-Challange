@@ -42,3 +42,46 @@ if (sayi > 0) {
 } else {
   console.log("Lutfen gecerli bir sayi giriniz");
 }
+
+/*
+
+Bir array oluştur: [12, 7, 5, 20, 9, 30]
+
+Array içindeki 10’dan büyük sayıları ekrana yazdır.
+
+Ayrıca, bu sayıların toplamını da ekrana yazdır.
+
+*/
+
+let arr = [12, 7, 5, 20, 9, 30];
+
+for (let i = 0; i < arr.length; i++) {
+  const element = arr[i];
+
+  if (element > 10) {
+    console.log(element);
+  }
+}
+
+/*
+
+
+1’den 50’ye kadar olan sayıları ekrana yazdır.
+
+Sadece 3 veya 5’in katlarını yazdır.
+
+Eğer sayı hem 3 hem 5’in katı ise "FizzBuzz" yazdır, sadece 3’ün katı ise "Fizz", sadece 5’in katı ise "Buzz" yazdır.
+
+*/
+
+let sayi2;
+
+for (let i = 1; i <= 50; i++) {
+  console.log(i);
+}
+
+for (let i = 1; i <= 50; i++) {
+  if (i % 3 == 0 || i % 5 == 0) {
+    console.log(i);
+  }
+}
